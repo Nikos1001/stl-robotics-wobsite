@@ -1,0 +1,59 @@
+
+.navbar {
+    --navbar-height: 65px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    background-color: white;
+    height: var(--navbar-height);
+    border-bottom: 1px solid #aaa;
+    transform: translate(0, 0);
+}
+
+.logo {
+    fill: var(--yellow);
+    position: relative;
+    left: calc(0.25 * var(--navbar-height)); 
+    top: calc(0.1 * var(--navbar-height)); 
+    height: 80%;
+}
+
+.socials {
+    height: 100%;
+    position: relative;
+    float: right;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+}
+
+.socialIcon {
+    height: 100% !important;
+}
+
+.linksContainer {
+    height: 100%;
+    left: 100%; 
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.linksContainer div {
+    margin-right: 25px;
+}
+
+.linksContainer button {
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbarButton {
+    user-select: none;
+}

@@ -1,0 +1,48 @@
+.formContainer {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer iframe {
+    border: none;
+}
+
+.personContainer {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.person {
+    width: 100%;
+    min-width: fit-content;
+    --person-height: 30vh;
+    height: var(--person-height);
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.person h1 {
+    font-family: 'Share Tech';
+}
+
+.person p a {
+    color: black;
+    text-decoration: dotted underline;
+}
+
+.personPhoto {
+    margin-right: 10px;
+    height: 100%;
+    width: var(--person-height);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    user-select: none;
+}
